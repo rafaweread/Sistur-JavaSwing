@@ -27,6 +27,7 @@ public class Encomendas extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        setClosable(true);
         setPreferredSize(new java.awt.Dimension(800, 504));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
