@@ -49,9 +49,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
         );
         jdpPane1Layout.setVerticalGroup(
             jdpPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 579, Short.MAX_VALUE)
+            .addGap(0, 549, Short.MAX_VALUE)
         );
 
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/imagens/icons/Botoes_5041_users_two_48.png"))); // NOI18N
         jMenu1.setText("Cadastro");
 
         jMenuItem1.setText("Entidades");
@@ -72,9 +73,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/imagens/icons/Botoes_5044_box_48.png"))); // NOI18N
         jMenu2.setText("Pedido");
         jMenuBar1.add(jMenu2);
 
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/imagens/icons/Elegantes_0029_Paper-pencil.png"))); // NOI18N
         jMenu3.setText("Relatórios");
         jMenuBar1.add(jMenu3);
 
