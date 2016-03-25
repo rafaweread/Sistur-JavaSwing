@@ -97,14 +97,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(816, 638));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
+    /**
+     * Nessa tela é onde iremos cadastras os clientes pessoa física e jurídica.
+     * @param evt 
+     */
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
         Entidades obj = new Entidades();
         jdpPane1.add(obj);
         obj.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
-
+    /**
+     *  Chama a tela de cadastro de usuário.
+     * @param evt 
+     */
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         CadastroUsuario cad = new CadastroUsuario();
         jdpPane1.add(cad);
