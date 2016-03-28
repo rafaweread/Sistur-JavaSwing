@@ -9,9 +9,10 @@ package AraTur;
  *
  * @author Rafael Lemos
  */
-public class Passagem {
+public class Passagem extends Pessoa{
     
-    private String Quantidade;
+    private String quantidade;
+    private Pessoa cliente;
     
     
 }
