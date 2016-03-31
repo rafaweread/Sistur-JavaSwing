@@ -9,11 +9,8 @@ package AraTur;
  *
  * @author Rafael Lemos
  */
-public class Encomenda extends Pessoa
+public class Encomenda
 
 {
     
-    private Pessoa cliente;
-    private 
- 
 }
