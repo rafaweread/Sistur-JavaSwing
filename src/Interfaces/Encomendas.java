@@ -62,6 +62,7 @@ public class Encomendas extends javax.swing.JInternalFrame {
         jFormattedTextField4 = new javax.swing.JFormattedTextField();
 
         setClosable(true);
+        setTitle("Encomendas");
         setPreferredSize(new java.awt.Dimension(800, 504));
 
         jLabel1.setText("Origem");
