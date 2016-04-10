@@ -5,6 +5,13 @@
  */
 package Interfaces;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Rafael Lemos
@@ -47,6 +54,7 @@ public class PessoaJuridica extends javax.swing.JInternalFrame {
         jNumero = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
+        setClosable(true);
         setTitle("Cadastro Pessoa Jurídica");
 
         jLabel1.setText("CNPJ");
@@ -69,6 +77,11 @@ public class PessoaJuridica extends javax.swing.JInternalFrame {
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/imagens/icons/Botoes_Site_5752_Knob_Add.png"))); // NOI18N
         jButton1.setText("Gravar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -174,6 +187,49 @@ public class PessoaJuridica extends javax.swing.JInternalFrame {
 
         setBounds(0, 0, 800, 505);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        File objPessoaJur = new File("C:\\Users\\Rafael Lemos\\Desktop\\PessoaJuridica.txt");
+        //verifica se já existe um arquivo.
+        boolean existe = objPessoaJur.exists();
+        if (existe) {
+            try {
+
+                objPessoaJur.createNewFile();  //Se existe, então cria um novo arquivo.
+            } catch (IOException ex) {
+                Logger.getLogger(Encomendas.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        FileWriter f1 = null; //Inicializa uma variável com o método para escrever no arquivo.
+        try {
+            f1 = new FileWriter(objPessoaJur, true); //Instancia do método de escrita(Variável do arquivo)
+        } catch (IOException ex) {
+            Logger.getLogger(Encomendas.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        try {
+            f1.write(jCnpj.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
+            f1.write(jInscEstadual.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
+            f1.write(jRazaoSocial.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
+            f1.write(jEmail.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
+            f1.write(jCidade.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
+            f1.write(jCep.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
+            f1.write(jBairro.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
+            f1.write(jRua.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
+            f1.write(jNumero.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
+            
+            JOptionPane.showMessageDialog(null,"CADASTRO EFETUADO COM SUCESSO");
+            
+        } catch (IOException ex) {
+            Logger.getLogger(Encomendas.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        try {
+            f1.close();  //Fecha o arquivo
+        } catch (IOException ex) {
+            Logger.getLogger(Encomendas.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

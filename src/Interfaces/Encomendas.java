@@ -294,7 +294,7 @@ public class Encomendas extends javax.swing.JInternalFrame {
             f1.write(cidOri.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
             f1.write(cidDes.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
             
-            JOptionPane.showMessageDialog(null,"Pedido efetuado com sucesso");
+            JOptionPane.showMessageDialog(null,"PEDIDO EFETUADO COM SUCESSO");
             
         } catch (IOException ex) {
             Logger.getLogger(Encomendas.class.getName()).log(Level.SEVERE, null, ex);

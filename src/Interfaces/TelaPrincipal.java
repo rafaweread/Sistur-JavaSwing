@@ -164,7 +164,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_pessoaJurActionPerformed
 
 
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem PedidoEncomenda;
     private javax.swing.JMenuItem PedidoPass;
