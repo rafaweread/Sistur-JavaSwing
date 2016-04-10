@@ -33,12 +33,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jdpPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        pessoaFis = new javax.swing.JMenuItem();
         pessoaJur = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        usuario = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        PedidoEncomenda = new javax.swing.JMenuItem();
+        PedidoPass = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,13 +58,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/imagens/icons/Botoes_5041_users_two_48.png"))); // NOI18N
         jMenu1.setText("Cadastro");
 
-        jMenuItem1.setText("Pessoa Física");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        pessoaFis.setText("Pessoa Física");
+        pessoaFis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                pessoaFisActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jMenu1.add(pessoaFis);
 
         pessoaJur.setText("Pessoa Jurídica");
         pessoaJur.addActionListener(new java.awt.event.ActionListener() {
@@ -74,34 +74,34 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jMenu1.add(pessoaJur);
 
-        jMenuItem2.setText("Usuário");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        usuario.setText("Usuário");
+        usuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                usuarioActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        jMenu1.add(usuario);
 
         jMenuBar1.add(jMenu1);
 
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/imagens/icons/Botoes_5044_box_48.png"))); // NOI18N
         jMenu2.setText("Pedido");
 
-        jMenuItem3.setText("Encomenda");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        PedidoEncomenda.setText("Encomenda");
+        PedidoEncomenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                PedidoEncomendaActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem3);
+        jMenu2.add(PedidoEncomenda);
 
-        jMenuItem4.setText("Passagem");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        PedidoPass.setText("Passagem");
+        PedidoPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                PedidoPassActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem4);
+        jMenu2.add(PedidoPass);
 
         jMenuBar1.add(jMenu2);
 
@@ -129,33 +129,33 @@ public class TelaPrincipal extends javax.swing.JFrame {
      * Nessa tela é onde iremos cadastras os clientes pessoa física e jurídica.
      * @param evt 
      */
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void pessoaFisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pessoaFisActionPerformed
         // TODO add your handling code here:
-        PessoaFisica obj = new PessoaFisica();
-        jdpPane1.add(obj);
-        obj.setVisible(true);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+        PessoaFisica objPessoaFis = new PessoaFisica();
+        jdpPane1.add(objPessoaFis);
+        objPessoaFis.setVisible(true);
+    }//GEN-LAST:event_pessoaFisActionPerformed
     /**
      *  Chama a tela de cadastro de usuário.
      * @param evt 
      */
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        CadastroUsuario cad = new CadastroUsuario();
-        jdpPane1.add(cad);
-        cad.setVisible(true);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    private void usuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuarioActionPerformed
+        CadastroUsuario cadUsuario = new CadastroUsuario();
+        jdpPane1.add(cadUsuario);
+        cadUsuario.setVisible(true);
+    }//GEN-LAST:event_usuarioActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        Encomendas enc = new Encomendas();
-        jdpPane1.add(enc);
-        enc.setVisible(true);
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    private void PedidoEncomendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PedidoEncomendaActionPerformed
+        Encomendas objEnc = new Encomendas();
+        jdpPane1.add(objEnc);
+        objEnc.setVisible(true);
+    }//GEN-LAST:event_PedidoEncomendaActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+    private void PedidoPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PedidoPassActionPerformed
         Passagens pass = new Passagens();
         jdpPane1.add(pass);
         pass.setVisible(true);
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_PedidoPassActionPerformed
 
     private void pessoaJurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pessoaJurActionPerformed
         PessoaJuridica objPessoaJur = new PessoaJuridica();
@@ -166,15 +166,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem PedidoEncomenda;
+    private javax.swing.JMenuItem PedidoPass;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JDesktopPane jdpPane1;
+    private javax.swing.JMenuItem pessoaFis;
     private javax.swing.JMenuItem pessoaJur;
+    private javax.swing.JMenuItem usuario;
     // End of variables declaration//GEN-END:variables
 }
