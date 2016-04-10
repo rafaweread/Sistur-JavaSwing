@@ -57,7 +57,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="numeroOri" min="-2" pref="80" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="cidOri" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                          <Component id="cidOri" alignment="0" min="-2" pref="203" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="152" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -83,7 +83,7 @@
                           </Group>
                           <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="cidDes" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="cidDes" alignment="0" min="-2" pref="201" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="41" max="32767" attributes="0"/>
                   </Group>
@@ -186,45 +186,13 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Origem"/>
+        <Property name="text" type="java.lang.String" value="Cidade Origem"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Destino"/>
+        <Property name="text" type="java.lang.String" value="Cidade Destino"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cidOri">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="Araputanga"/>
-            <StringItem index="1" value="Cuiab&#xe1;"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cidOriActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cidDes">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="Araputanga"/>
-            <StringItem index="1" value="Cuiab&#xe1;"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cidDesActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
@@ -348,6 +316,10 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="ID Pedido"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cidOri">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cidDes">
     </Component>
   </SubComponents>
 </Form>

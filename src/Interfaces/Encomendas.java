@@ -36,8 +36,6 @@ public class Encomendas extends javax.swing.JInternalFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        cidOri = new javax.swing.JComboBox<>();
-        cidDes = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -64,28 +62,16 @@ public class Encomendas extends javax.swing.JInternalFrame {
         jComboBox3 = new javax.swing.JComboBox<>();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        cidOri = new javax.swing.JTextField();
+        cidDes = new javax.swing.JTextField();
 
         setClosable(true);
         setTitle("Encomendas");
         setPreferredSize(new java.awt.Dimension(800, 504));
 
-        jLabel1.setText("Origem");
+        jLabel1.setText("Cidade Origem");
 
-        jLabel2.setText("Destino");
-
-        cidOri.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Araputanga", "Cuiabá" }));
-        cidOri.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cidOriActionPerformed(evt);
-            }
-        });
-
-        cidDes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Araputanga", "Cuiabá" }));
-        cidDes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cidDesActionPerformed(evt);
-            }
-        });
+        jLabel2.setText("Cidade Destino");
 
         jLabel3.setText("Endereço Origem");
 
@@ -164,7 +150,7 @@ public class Encomendas extends javax.swing.JInternalFrame {
                                 .addComponent(jLabel11)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(numeroOri, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(cidOri, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cidOri, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -185,7 +171,7 @@ public class Encomendas extends javax.swing.JInternalFrame {
                                 .addComponent(ruaDes, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel4)
                             .addComponent(jLabel2)
-                            .addComponent(cidDes, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cidDes, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(41, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -267,15 +253,6 @@ public class Encomendas extends javax.swing.JInternalFrame {
         setBounds(0, 0, 800, 504);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cidOriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cidOriActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_cidOriActionPerformed
-
-    private void cidDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cidDesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cidDesActionPerformed
-
     private void cepDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cepDesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cepDesActionPerformed
@@ -314,6 +291,8 @@ public class Encomendas extends javax.swing.JInternalFrame {
             f1.write(bairroDes.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
             f1.write(cepDes.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
             f1.write(numeroDes.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
+            f1.write(cidOri.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
+            f1.write(cidDes.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
             
             JOptionPane.showMessageDialog(null,"Nome inserido com sucesso!!!");
             
@@ -335,8 +314,8 @@ public class Encomendas extends javax.swing.JInternalFrame {
     private javax.swing.JTextField bairroOri;
     private javax.swing.JFormattedTextField cepDes;
     private javax.swing.JFormattedTextField cepOri;
-    private javax.swing.JComboBox<String> cidDes;
-    private javax.swing.JComboBox<String> cidOri;
+    private javax.swing.JTextField cidDes;
+    private javax.swing.JTextField cidOri;
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JLabel jLabel1;
