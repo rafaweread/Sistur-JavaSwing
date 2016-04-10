@@ -262,20 +262,20 @@ public class Encomendas extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_numeroDesActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        File f = new File("C:\\Users\\Rafael Lemos\\Desktop\\Encomendas.txt");
+        File objEnc = new File("C:\\Users\\Rafael Lemos\\Desktop\\Encomendas.txt");
         //verifica se já existe um arquivo.
-        boolean existe = f.exists();
+        boolean existe = objEnc.exists();
         if (existe) {
             try {
 
-                f.createNewFile();  //Se existe, então cria um novo arquivo.
+                objEnc.createNewFile();  //Se existe, então cria um novo arquivo.
             } catch (IOException ex) {
                 Logger.getLogger(Encomendas.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         FileWriter f1 = null; //Inicializa uma variável com o método para escrever no arquivo.
         try {
-            f1 = new FileWriter(f, true); //Instancia do método de escrita(Variável do arquivo)
+            f1 = new FileWriter(objEnc, true); //Instancia do método de escrita(Variável do arquivo)
         } catch (IOException ex) {
             Logger.getLogger(Encomendas.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -294,7 +294,7 @@ public class Encomendas extends javax.swing.JInternalFrame {
             f1.write(cidOri.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
             f1.write(cidDes.getText() + " "); //Captura o texto digitado e inclui no arquivo txt.
             
-            JOptionPane.showMessageDialog(null,"Nome inserido com sucesso!!!");
+            JOptionPane.showMessageDialog(null,"Pedido efetuado com sucesso");
             
         } catch (IOException ex) {
             Logger.getLogger(Encomendas.class.getName()).log(Level.SEVERE, null, ex);

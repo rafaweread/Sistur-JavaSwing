@@ -52,9 +52,9 @@
                                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="jTextField7" alignment="0" max="32767" attributes="0"/>
                               <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
                               <Component id="jTextField4" alignment="0" min="-2" pref="404" max="-2" attributes="0"/>
+                              <Component id="jTextField7" alignment="0" min="-2" pref="304" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jFormattedTextField1" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
