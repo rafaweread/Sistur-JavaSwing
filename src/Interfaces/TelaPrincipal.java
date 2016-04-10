@@ -34,6 +34,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        pessoaJur = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
@@ -57,13 +58,21 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/imagens/icons/Botoes_5041_users_two_48.png"))); // NOI18N
         jMenu1.setText("Cadastro");
 
-        jMenuItem1.setText("Entidades");
+        jMenuItem1.setText("Pessoa Física");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
             }
         });
         jMenu1.add(jMenuItem1);
+
+        pessoaJur.setText("Pessoa Jurídica");
+        pessoaJur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pessoaJurActionPerformed(evt);
+            }
+        });
+        jMenu1.add(pessoaJur);
 
         jMenuItem2.setText("Usuário");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
@@ -122,7 +131,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
      */
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
-        Entidades obj = new Entidades();
+        PessoaFisica obj = new PessoaFisica();
         jdpPane1.add(obj);
         obj.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
@@ -148,6 +157,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         pass.setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
+    private void pessoaJurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pessoaJurActionPerformed
+        PessoaJuridica objPessoaJur = new PessoaJuridica();
+        jdpPane1.add(objPessoaJur);
+        objPessoaJur.setVisible(true);
+    }//GEN-LAST:event_pessoaJurActionPerformed
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -160,5 +175,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JDesktopPane jdpPane1;
+    private javax.swing.JMenuItem pessoaJur;
     // End of variables declaration//GEN-END:variables
 }
